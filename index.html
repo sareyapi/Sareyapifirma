@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8" />
@@ -6,12 +6,11 @@
 <title>Sare Yapı Ultra Premium</title>
 
 <style>
-    /* ---------- RENK PALETİ ---------- */
     :root {
         --gold: #d4af37;
         --gold-light: #f7e9b5;
         --dark: #0a0a0a;
-        --gray: #222;
+        --gray: #1a1a1a;
         --white: #fff;
     }
 
@@ -23,11 +22,11 @@
         scroll-behavior: smooth;
     }
 
-    /* ---------- ÜST MENÜ ---------- */
+    /* ÜST MENÜ */
     header {
         width:100%;
         padding:20px 40px;
-        background:rgba(0,0,0,0.8);
+        background:rgba(0,0,0,0.85);
         position:fixed;
         top:0; left:0;
         backdrop-filter: blur(7px);
@@ -53,7 +52,7 @@
     }
     nav a:hover { color: var(--gold); }
 
-    /* ---------- BANNER ---------- */
+    /* BANNER */
     .hero {
         height:100vh;
         background: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
@@ -74,7 +73,7 @@
         color:var(--white);
     }
 
-    /* ---------- BÖLÜM ---------- */
+    /* BAŞLIK */
     section {
         padding:80px 40px;
         max-width:1100px;
@@ -89,7 +88,7 @@
     }
     p { line-height:1.7; font-size:18px; }
 
-    /* ---------- HİZMET KARTLARI ---------- */
+    /* HİZMETLER */
     .cards {
         display:grid;
         grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -111,9 +110,11 @@
         width:100%;
         border-radius:8px;
         margin-bottom:12px;
+        height:180px;
+        object-fit:cover;
     }
 
-    /* ---------- GALERİ ---------- */
+    /* GALERİ */
     .gallery {
         display:grid;
         grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -127,7 +128,7 @@
         border:2px solid var(--gold);
     }
 
-    /* ---------- FOOTER ---------- */
+    /* FOOTER */
     footer {
         text-align:center;
         padding:25px;
@@ -137,7 +138,7 @@
         margin-top:40px;
     }
 
-    /* ---------- WHATSAPP BUTONU ---------- */
+    /* WHATSAPP */
     .whatsapp {
         position:fixed;
         bottom:25px; right:25px;
@@ -160,6 +161,7 @@
         <div class="logo">SARE YAPI ULTRA PREMIUM</div>
         <nav>
             <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#nedenbiz">Neden Biz?</a>
             <a href="#hizmetler">Hizmetler</a>
             <a href="#galeri">Galeri</a>
             <a href="#iletisim">İletişim</a>
@@ -167,7 +169,6 @@
     </div>
 </header>
 
-<!-- HERO -->
 <div class="hero">
     <div>
         <h1>Profesyonel Alçı – Boya – Mantolama</h1>
@@ -178,10 +179,19 @@
 <section id="hakkimizda">
     <h2>Hakkımızda</h2>
     <p>
-        Sare Yapı Ultra Premium olarak alçı, boya, dış cephe mantolama, kartonpiyer, tadilat & tamirat 
-        alanlarında profesyonel hizmet sunuyoruz.  
-        Modern, güvenilir ve ekonomik çözümlerimizle hayallerinizi gerçeğe dönüştürüyoruz.
+        Sare Yapı Ultra Premium; alçı, boya, mantolama, kartonpiyer ve tüm tadilat işlemlerinde
+        profesyonel ekip ile altın standartta hizmet sunar.
     </p>
+</section>
+
+<section id="nedenbiz">
+    <h2>Neden Biz?</h2>
+    <div class="cards">
+        <div class="card"><h3>✨ Premium Kalite</h3><p>Her işlemde altın standart.</p></div>
+        <div class="card"><h3>⚡ Hızlı Teslim</h3><p>Söz verilen tarihte teslim.</p></div>
+        <div class="card"><h3>⭐ Usta Kadro</h3><p>Uzman ve deneyimli ekip.</p></div>
+        <div class="card"><h3>📞 7/24 Destek</h3><p>İstediğiniz an ulaşın.</p></div>
+    </div>
 </section>
 
 <section id="hizmetler">
@@ -189,21 +199,21 @@
 
     <div class="cards">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" />
-            <h3>1. Alçı – Boya – Dekorasyon</h3>
-            <p>Modern ve temiz işçilik ile iç cephe boya, tavan ve duvar alçı uygulamaları.</p>
+            <img src="https://i.ibb.co/w4GNQ6f/alciboya.jpg" />
+            <h3>1. Alçı – Boya</h3>
+            <p>Modern dekorasyon & temiz işçilik.</p>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" />
-            <h3>2. Mantolama & Yalıtım</h3>
-            <p>Isı – ses – dış cephe mantolama, profesyonel iskeleli sistem.</p>
+            <img src="https://i.ibb.co/bKf3VQJ/mantolama.jpg" />
+            <h3>2. Mantolama</h3>
+            <p>Isı ve dış cephe yalıtımında profesyonel uygulama.</p>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" />
+            <img src="https://i.ibb.co/HYdVHsV/kartonpiyer.jpg" />
             <h3>3. Tadilat – Tamirat</h3>
-            <p>Ev – işyeri komple yenileme, kartonpiyer, alçıpan, tamir & onarım.</p>
+            <p>Ev / işyeri komple yenileme.</p>
         </div>
     </div>
 </section>
@@ -211,19 +221,17 @@
 <section id="galeri">
     <h2>Galeri</h2>
     <div class="gallery">
-        <img src="https://source.unsplash.com/400x300/?construction" />
-        <img src="https://source.unsplash.com/401x301/?renovation" />
-        <img src="https://source.unsplash.com/402x302/?painting" />
-        <img src="https://source.unsplash.com/403x303/?building" />
-        <img src="https://source.unsplash.com/404x304/?interior" />
-        <img src="https://source.unsplash.com/405x305/?architecture" />
+        <img src="https://i.ibb.co/w4GNQ6f/alciboya.jpg" />
+        <img src="https://i.ibb.co/bKf3VQJ/mantolama.jpg" />
+        <img src="https://i.ibb.co/HYdVHsV/kartonpiyer.jpg" />
     </div>
 </section>
 
 <section id="iletisim">
     <h2>İletişim</h2>
-    <p><strong>Telefon 1:</strong> 501 070 1241</p>
-    <p><strong>Telefon 2:</strong> 534 283 1241</p>
+    <p><strong>Telefon 1:</strong> 0501 070 1241</p>
+    <p><strong>Telefon 2:</strong> 0534 283 1241</p>
+    <p><strong>Adres:</strong> Ankara / Mamak</p>
 </section>
 
 <footer>
@@ -231,169 +239,6 @@
 </footer>
 
 <a class="whatsapp" href="https://wa.me/905010701241" target="_blank">WhatsApp</a>
-
-</body>
-</html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sare Yapı – Ultra Premium Web Sitesi</title>
-
-<style>
-body{
-    margin:0; font-family:'Arial'; background:#0a0a0a; color:#eee;
-}
-h2{
-    color:#e5c164; font-size:34px; margin-top:40px;
-}
-p{
-    font-size:19px; max-width:850px; margin:auto; color:#ccc;
-}
-
-/* Gradient Backgrounds */
-.gradient1{ background:linear-gradient(135deg,#0a0a0a,#1f0f0f,#100a2e); }
-.gradient2{ background:linear-gradient(135deg,#0b0b0c,#1e1400,#2d1b00); }
-
-/* Navigation */
-nav{
-    padding:15px; position:sticky; top:0; z-index:999;
-    display:flex; justify-content:center; flex-wrap:wrap; gap:25px;
-    background:#000000cc; backdrop-filter: blur(8px);
-}
-nav a{
-    color:#e5c164; font-weight:bold; font-size:19px; text-decoration:none;
-}
-
-/* HEADER */
-header{
-    background:url('https://i.ibb.co/bKf3VQJ/mantolama.jpg') center/cover no-repeat;
-    height:70vh; display:flex; justify-content:center; align-items:center;
-    color:#ffda6b; font-size:52px; font-weight:bold;
-    text-shadow:0 0 25px black;
-    border-bottom:4px solid #e5c164;
-}
-
-/* GOLD LINE */
-.line{ width:140px; height:4px; background:#e5c164; margin:15px auto; }
-
-/* Cards */
-.cards{
-    display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:30px;
-}
-.card{
-    background:#111; border:2px solid #e5c164;
-    box-shadow:0 0 25px #e5c16433;
-    padding:25px; width:330px; border-radius:13px; text-align:center;
-    transition:0.35s;
-}
-.card:hover{
-    transform:scale(1.06);
-    border-color:#ffef9c;
-    box-shadow:0 0 30px #ffef9c55;
-}
-.card img{
-    width:100%; height:210px; object-fit:cover; border-radius:12px; margin-bottom:15px;
-}
-
-/* Buttons */
-.btn{
-    background:linear-gradient(45deg,#e5c164,#ffef9c,#d4af37);
-    padding:18px 35px; border-radius:12px; color:#000;
-    font-size:22px; font-weight:bold; text-decoration:none;
-    display:inline-block; margin-top:20px;
-    box-shadow:0 0 15px #cfa93a88;
-}
-
-/* Gallery */
-.gallery img{
-    width:310px; height:230px; object-fit:cover; border-radius:10px;
-    border:3px solid #e5c164; margin:12px;
-}
-
-/* Whatsapp Floating */
-#whatsapp{
-    position:fixed; bottom:25px; right:25px; background:#25D366;
-    color:white; font-size:36px; padding:18px; border-radius:50%;
-    text-decoration:none; box-shadow:0 0 20px #25D366;
-}
-
-/* Footer */
-footer{
-    background:#0d0d0e; padding:40px; margin-top:50px;
-    color:#999; text-align:center; border-top:2px solid #e5c164;
-}
-
-/* Subtle fade animation */
-.fade{ animation:fadeIn 1s ease-in-out; }
-@keyframes fadeIn{
-    from{ opacity:0; transform:translateY(20px); }
-    to{ opacity:1; transform:translateY(0); }
-}
-</style>
-</head>
-
-<body>
-
-<nav class="gradient2">
-<a href="#hakkimizda">Hakkımızda</a>
-<a href="#nedenbiz">Neden Biz?</a>
-<a href="#hizmetler">Hizmetler</a>
-<a href="#referanslar">Referanslar</a>
-<a href="#galeri">Galeri</a>
-<a href="#iletisim">İletişim</a>
-</nav>
-
-<header class="gradient1 fade">Sare Yapı – Ultra Premium</header>
-
-<section id="hakkimizda">
-<h2>Hakkımızda</h2><div class="line"></div>
-<p>Sare Yapı olarak Ankara ve Türkiye'nin her noktasında en üst düzey alçı, boya, mantolama, kartonpiyer ve tadilat hizmeti sunuyoruz.
-Kalite, hız ve profesyonelliği bir araya getirerek müşterilerimize benzersiz bir deneyim sağlıyoruz.</p>
-</section>
-
-<section id="nedenbiz">
-<h2>Neden Biz?</h2><div class="line"></div>
-<div class="cards fade">
-<div class="card"><h3>✨ Premium Kalite</h3><p>Her işlemde altın standart.</p></div>
-<div class="card"><h3>⚡ Hızlı Teslim</h3><p>Gecikmeden, zamanında teslim.</p></div>
-<div class="card"><h3>⭐ Profesyonel Ekip</h3><p>Deneyimli usta kadrosu.</p></div>
-<div class="card"><h3>📞 7/24 Destek</h3><p>Her zaman yanınızdayız.</p></div>
-</div>
-</section>
-
-<section id="hizmetler">
-<h2>Hizmetlerimiz</h2><div class="line"></div>
-<div class="cards fade">
-<div class="card"><img src="https://i.ibb.co/w4GNQ6f/alciboya.jpg"><h3>Alçı Boya</h3></div>
-<div class="card"><img src="https://i.ibb.co/bKf3VQJ/mantolama.jpg"><h3>Mantolama</h3></div>
-<div class="card"><img src="https://i.ibb.co/HYdVHsV/kartonpiyer.jpg"><h3>Kartonpiyer</h3></div>
-</div>
-</section>
-
-<section id="referanslar">
-<h2>Referanslar</h2><div class="line"></div>
-<p>Onlarca büyük iç ve dış cephe projesi – %100 müşteri memnuniyeti.</p>
-</section>
-
-<section id="galeri">
-<h2>Galeri</h2><div class="line"></div>
-<div class="gallery fade">
-<img src="https://i.ibb.co/w4GNQ6f/alciboya.jpg">
-<img src="https://i.ibb.co/bKf3VQJ/mantolama.jpg">
-<img src="https://i.ibb.co/HYdVHsV/kartonpiyer.jpg">
-</div>
-</section>
-
-<section id="iletisim">
-<h2>Adres & Telefon</h2><div class="line"></div>
-<p>Telefon: 0501 070 1241 – 0534 283 1241<br>Adres: Ankara / Mamak</p>
-<a class="btn" href="https://wa.me/905010701241">WhatsApp Hızlı İletişim</a>
-</section>
-
-<a id="whatsapp" href="https://wa.me/905010701241">💬</a>
-
-<footer>© 2025 Sare Yapı – Ultra Premium Tasarım</footer>
 
 </body>
 </html>
