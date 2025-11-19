@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sare Yapı Ultra Premium</title>
+
+<style>
+    :root {
+        --gold: #d4af37;
+        --gold-light: #f7e9b5;
+        --dark: #0a0a0a;
+        --gray: #1a1a1a;
+        --white: #fff;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family: "Segoe UI", sans-serif;
+        background: var(--dark);
+        color: var(--white);
+        scroll-behavior: smooth;
+        -webkit-font-smoothing:antialiased;
+    }
+
+    /* HEADER */
+    header {
+        width:100%;
+        padding:18px 28px;
+        background:linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.6));
+        position:fixed;
+        top:0; left:0;
+        backdrop-filter: blur(6px);
+        border-bottom:2px solid rgba(212,175,55,0.12);
+        z-index:1000;
+    }
+    .menu { display:flex; align-items:center; justify-content:space-between; gap:12px; max-width:1200px; margin:0 auto; }
+    .logo { font-size:22px; font-weight:900; color:var(--gold); letter-spacing:1px; }
+    nav a { margin-left:18px; text-decoration:none; color:var(--white); font-size:15px; opacity:0.95; }
+    nav a:hover { color:var(--gold); }
+
+    /* HERO */
+    .hero {
+        height:86vh;
+        background:
+          radial-gradient(ellipse at center, rgba(212,175,55,0.04), transparent 25%),
+          url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+        display:flex; align-items:center; justify-content:center; text-align:center;
+        padding-top:78px;
+        border-bottom:4px solid rgba(212,175,55,0.08);
+    }
+    .hero .wrap { max-width:980px; padding:28px; background:rgba(0,0,0,0.18); border-radius:12px; box-shadow:0 20px 60px rgba(0,0,0,0.6); }
+    .hero h1 { font-size:46px; color:var(--gold); margin-bottom:8px; text-shadow:0 8px 30px rgba(0,0,0,0.6); }
+    .hero p { font-size:20px; color:#f5ecd0; margin-bottom:14px; }
+
+    /* LAYOUT */
+    main { max-width:1200px; margin:40px auto; padding:0 20px 60px; }
+
+    section { margin:36px 0; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03)); padding:34px; border-radius:12px; border:1px solid rgba(255,255,255,0.02); }
+    h2 { color:var(--gold); font-size:28px; margin-bottom:12px; padding-left:10px; border-left:4px solid var(--gold); display:inline-block; }
+
+    p.lead { color:#e9e0c7; line-height:1.8; font-size:17px; max-width:980px; }
+
+    /* CARDS */
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:22px; margin-top:20px; }
+    .card {
+        background:#0f0f10; padding:18px; border-radius:12px; border:1px solid rgba(212,175,55,0.08);
+        box-shadow:0 10px 30px rgba(0,0,0,0.6); transition:transform .28s, box-shadow .28s;
+    }
+    .card:hover { transform:translateY(-8px); box-shadow:0 28px 60px rgba(212,175,55,0.08); border-color:rgba(212,175,55,0.18); }
+    .card img { width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:12px; }
+
+    /* GALLERY */
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:14px; }
+    .gallery img { width:100%; height:180px; object-fit:cover; border-radius:10px; border:2px solid rgba(212,175,55,0.08); transition:transform .25s, box-shadow .25s; }
+    .gallery img:hover { transform:scale(1.03); box-shadow:0 18px 40px rgba(0,0,0,0.6); border-color:rgba(212,175,55,0.24); }
+
+    /* CTA */
+    .cta { display:flex; gap:12px; align-items:center; justify-content:center; margin-top:18px; flex-wrap:wrap; }
+    .btn {
+        background:linear-gradient(45deg,var(--gold),var(--gold-light));
+        color:#111; padding:12px 22px; border-radius:10px; font-weight:800; text-decoration:none; box-shadow:0 8px 30px rgba(212,175,55,0.12);
+    }
+
+    /* SIDEBAR FACTS */
+    .facts { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:12px; }
+    .fact { background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04)); padding:12px; border-radius:8px; border-left:4px solid var(--gold); }
+
+    /* TESTIMONIALS */
+    .testimonials { display:flex; gap:12px; flex-direction:column; margin-top:14px; }
+    .test { background:#0d0d0d; padding:12px; border-radius:8px; border-left:4px solid rgba(212,175,55,0.06); }
+
+    /* FOOTER */
+    footer { text-align:center; padding:24px 10px; color:#cfc6a8; border-top:1px solid rgba(212,175,55,0.04); margin-top:30px; }
+
+    /* FLOAT ACTIONS */
+    .fab { position:fixed; right:18px; bottom:18px; display:flex; flex-direction:column; gap:12px; z-index:999; }
+    .fab a { width:62px; height:62px; border-radius:999px; display:grid; place-items:center; font-size:24px; color:white; text-decoration:none; box-shadow:0 12px 36px rgba(0,0,0,0.5); }
+    .fab .call { background:linear-gradient(180deg,#fff,#f0f0f0); color:var(--gold); font-weight:900; }
+    .fab .wa { background:linear-gradient(45deg,#25d366,#16a64a); }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+        .hero h1 { font-size:30px; }
+        section { padding:28px; margin:24px 12px; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="menu">
+    <div class="logo">SARE YAPI ULTRA PREMIUM</div>
+    <nav>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Profesyonel Alçı • Boya • Mantolama</h1>
+    <p>Ankara Mamak merkezli, Türkiye genelinde hizmet — kalite, hız ve güven.</p>
+    <div class="cta">
+      <a class="btn" href="tel:05010701241">📞 Hemen Ara</a>
+      <a class="btn" href="https://wa.me/905010701241">💬 WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p class="lead">Sare Yapı Ultra Premium; alçı, boya, mantolama, kartonpiyer ve tadilat hizmetlerinde uzman ekip ve altın standartta işçilik sunar. Ücretsiz keşif ve yazılı garantiyle çalışıyoruz.</p>
+
+    <div class="cards" style="margin-top:22px;">
+      <div class="card">
+        <img src="https://i.ibb.co/w4GNQ6f/alciboya.jpg" alt="alci boya">
+        <h3>Alçı & Boya</h3>
+        <p>İç mekan, tavan, duvar uygulamaları; renk danışmanlığı.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/bKf3VQJ/mantolama.jpg" alt="mantolama">
+        <h3>Mantolama</h3>
+        <p>Dış cephe ısı yalıtımı ve mantolama sistemleri.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/HYdVHsV/kartonpiyer.jpg" alt="kartonpiyer">
+        <h3>Kartonpiyer & Dekor</h3>
+        <p>Estetik tavan uygulamaları ve özgün tasarım seçenekleri.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nedenbiz">
+    <h2>Neden Biz?</h2>
+    <div class="facts">
+      <div class="fact"><strong>150+</strong><div>Tamamlanan Proje</div></div>
+      <div class="fact"><strong>98%</strong><div>Müşteri Memnuniyeti</div></div>
+      <div class="fact"><strong>12+</strong><div>Yıl Deneyim</div></div>
+      <div class="fact"><strong>2 Yıl</strong><div>Yapı Garantisi</div></div>
+    </div>
+    <div class="testimonials">
+      <div class="test"><strong>Mehmet K.</strong> — “Hızlı, temiz ve profesyonel. Tavsiye ederim.”</div>
+      <div class="test"><strong>Ayşe T.</strong> — “Fiyat/performans mükemmel, iş teslimatı zamanında.”</div>
+    </div>
+  </section>
+
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://source.unsplash.com/800x600/?plaster" alt="">
+        <h3>Alçı Uygulamaları</h3>
+        <p>Düzgün yüzey, profesyonel sıva ve tamirat.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/800x600/?insulation" alt="">
+        <h3>Dış Cephe & Mantolama</h3>
+        <p>Isı yalıtımı, estetik dış cephe uygulamaları.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/800x600/?decoration" alt="">
+        <h3>Kartonpiyer & Dekorasyon</h3>
+        <p>Özel tasarım ve montaj çözümleri.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri</h2>
+    <div class="gallery">
+      <img src="https://i.ibb.co/w4GNQ6f/alciboya.jpg" alt="">
+      <img src="https://i.ibb.co/bKf3VQJ/mantolama.jpg" alt="">
+      <img src="https://i.ibb.co/HYdVHsV
