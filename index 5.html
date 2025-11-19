@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sare Yapı Firma — Profesyonel Alçı Boya Mantolama</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230A1A2F'/%3E%3Ctext x='50' y='55' font-size='36' text-anchor='middle' fill='%23FF7A00' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --primary:#0A1A2F; /* dark navy */
+  --accent:#FF7A00;  /* orange */
+  --muted:#f2f2f2;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif; margin:0; color:var(--primary); background:var(--muted);}
+.header{
+  background:linear-gradient(180deg, rgba(10,26,47,0.9), rgba(10,26,47,0.95)), url('https://images.unsplash.com/photo-1596464716121-2e53e5b8b9a1?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  color:white; padding:48px 18px 80px; text-align:center; position:relative;
+}
+.logo{
+  display:inline-flex; align-items:center; gap:12px; margin-bottom:10px;
+}
+.logo-mark{width:56px; height:56px; border-radius:8px; background:linear-gradient(135deg,var(--accent),#ffaf40); display:flex; align-items:center; justify-content:center; font-weight:700; color:white; font-size:22px;}
+.site-title{font-size:28px; font-weight:700; letter-spacing:0.2px;}
+.site-sub{opacity:0.95; margin-top:6px; color: #fff8; font-size:15px;}
+.hero-card{
+  background:rgba(255,255,255,0.06); max-width:980px; margin:22px auto 0; padding:18px; border-radius:12px; backdrop-filter: blur(4px);
+  display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+}
+.hero-left{text-align:left;}
+.h-tag{font-size:18px; margin:0 0 6px;}
+.hero-phones{font-size:20px; font-weight:700;}
+.btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;}
+.btn{
+  display:inline-flex; align-items:center; gap:8px; text-decoration:none; padding:12px 16px; border-radius:10px; font-weight:700;
+  transition:transform .12s ease, box-shadow .12s; box-shadow: 0 6px 18px rgba(10,26,47,0.12);
+}
+.btn-call{background:white; color:var(--primary);}
+.btn-wa{background:var(--accent); color:white;}
+.main{max-width:1100px; margin:-40px auto 60px; padding:0 18px;}
+.grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
+@media(max-width:820px){ .grid{grid-template-columns:1fr;} .header{padding-bottom:70px} .site-title{font-size:22px}}
+.card{background:var(--card); border-radius:12px; padding:18px; box-shadow:0 6px 22px rgba(10,26,47,0.06);}
+.services{display:flex; gap:12px; flex-wrap:wrap;}
+.service{flex:1 1 160px; background:linear-gradient(180deg,#fff,#fbfbfb); border-radius:10px; padding:14px; min-width:140px; display:flex; gap:10px; align-items:center;}
+.icon{width:44px; height:44px; display:grid; place-items:center; border-radius:8px; background:var(--muted); color:var(--primary); font-weight:700;}
+.how{display:flex; gap:12px; margin-top:12px; flex-wrap:wrap;}
+.step{flex:1 1 180px; background:linear-gradient(90deg,#fff,#fff); padding:12px; border-radius:10px; box-shadow:0 6px 18px rgba(10,26,47,0.04);}
+.cta-strip{background:linear-gradient(90deg, rgba(255,122,0,0.1), rgba(10,26,47,0.02)); padding:18px; border-radius:12px; margin-top:18px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+.small{font-size:13px; color:#666}
+.footer{background:var(--primary); color:white; padding:18px; text-align:center; margin-top:30px;}
+.hero-images{display:flex; gap:8px; align-items:center;}
+.hero-images img{width:120px; height:80px; object-fit:cover; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.2); border:4px solid rgba(255,255,255,0.06)}
+.badge{background:rgba(255,255,255,0.12); padding:8px 12px; border-radius:20px; color:white; font-weight:700}
+.small-note{font-size:13px; color:#fff9; margin-top:6px}
+.logo-block{display:flex; align-items:center; gap:12px}
+.testimonials{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+@media(max-width:820px){ .testimonials{grid-template-columns:1fr} }
+.pro-bubble{display:flex; gap:12px; align-items:center}
+.pro-bubble img{width:56px; height:56px; object-fit:cover; border-radius:8px}
+</style>
+</head>
+<body>
+
+<header class="header" role="banner">
+  <div class="logo">
+    <div class="logo-mark" aria-hidden="true">S</div>
+    <div>
+      <div class="site-title">Profesyonel Alçı Boya Mantolama Hizmetleri</div>
+      <div class="site-sub">SareYapıFirma — Ankara & Türkiye genelinde hayallerinizi gerçekleştirir.</div>
+    </div>
+  </div>
+
+  <div class="hero-card" role="region" aria-label="iletişim ve hızlı çağrı">
+    <div class="hero-left">
+      <div class="h-tag">Hemen ücretsiz keşif ve fiyat teklifi alın</div>
+      <div class="hero-phones">0501 070 1241 · 0534 283 1241</div>
+      <div class="btns">
+        <a class="btn btn-call" href="tel:05010701241" aria-label="Telefonla ara"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.9.38 1.76.75 2.55a2 2 0 0 1-.45 2.11L8.91 9.91a16 16 0 0 0 6 6l1.53-1.53a2 2 0 0 1 2.11-.45c.8.37 1.65.63 2.55.75A2 2 0 0 1 22 16.92z" fill="currentColor"/></svg> Hemen Ara</a>
+        <a class="btn btn-wa" href="https://wa.me/905010701241" target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
+      </div>
+      <div class="small-note">Ankara Mamak merkezli, bölgesel ve şehirlerarası hizmet.</div>
+    </div>
+
+    <div class="hero-images" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1596464716121-2e53e5b8b9a1?auto=format&fit=crop&w=800&q=60" alt="Modern daire içi alçı boya">
+      <img src="https://images.unsplash.com/photo-1581092580491-5c4b8c9e8f7b?auto=format&fit=crop&w=800&q=60" alt="İnşaat iskeleli mantolama">
+    </div>
+  </div>
+</header>
+
+<main class="main" role="main">
+  <section class="grid">
+    <div class="card">
+      <h3>Hizmetlerimiz</h3>
+      <div class="services" role="list">
+        <div class="service" role="listitem"><div class="icon">A</div><div><strong>Alçı</strong><div class="small">İç mekân alçı uygulamaları, sıva, düzeltme.</div></div></div>
+        <div class="service" role="listitem"><div class="icon">B</div><div><strong>Boya</strong><div class="small">Kaliteli boya, badana, iç dekor uygulamaları.</div></div></div>
+        <div class="service" role="listitem"><div class="icon">M</div><div><strong>Mantolama</strong><div class="small">Dış cephe ısı yalıtım (mantolama) uygulamaları.</div></div></div>
+        <div class="service" role="listitem"><div class="icon">K</div><div><strong>Kartonpiyer</strong><div class="small">Estetik iç mekân süslemeleri ve tasarımlar.</div></div></div>
+        <div class="service" role="listitem"><div class="icon">D</div><div><strong>Dış Cephe</strong><div class="small">Cephe kaplama ve yüzey iyileştirmeleri.</div></div></div>
+        <div class="service" role="listitem"><div class="icon">T</div><div><strong>Tadilat & Tamirat</strong><div class="small">Küçük ve büyük tadilat projeleri.</div></div></div>
+      </div>
+
+      <div class="how">
+        <div class="step"><strong>Adım 1</strong><div class="small">Bize ulaşın, keşif randevusu alın.</div></div>
+        <div class="step"><strong>Adım 2</strong><div class="small">Ücretsiz keşif & fiyat teklifi.</div></div>
+        <div class="step"><strong>Adım 3</strong><div class="small">Sözleşme & profesyonel uygulama.</div></div>
+      </div>
+
+      <div class="cta-strip">
+        <div>
+          <div style="font-weight:800">Ücretsiz keşif için hemen arayın</div>
+          <div class="small">Telefon: 0501 070 1241 · 0534 283 1241</div>
+        </div>
+        <div>
+          <a class="btn btn-call" href="tel:05010701241">📞 Telefonla Ara</a>
+          <a class="btn btn-wa" href="https://wa.me/905010701241" target="_blank">💬 WhatsApp'tan Yaz</a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card">
+      <h3>Hakkımızda</h3>
+      <p><strong>SareYapıFirma</strong> tüm Ankara ve Türkiye genelinde hayallerinizi profesyonel şekilde gerçekleştirir. Ustalık, zamanında teslim ve temiz işçilik ilkemizdir. Kaliteli malzeme ve deneyimli ekip ile projelerinizi güvenle tamamlıyoruz.</p>
+
+      <div style="margin-top:14px">
+        <h4>Müşteri Yorumları</h4>
+        <div class="testimonials">
+          <div class="pro-bubble card"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=60" alt="müşteri"><div><strong>Mehmet K.</strong><div class="small">Hızlı, temiz ve profesyonel işçilik. Çok memnun kaldık.</div></div></div>
+          <div class="pro-bubble card"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=60" alt="müşteri2"><div><strong>Ayşe T.</strong><div class="small">Fiyat / kalite mükemmeldi. Tavsiye ederim.</div></div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px">
+        <h4>İletişim & Hızlı Erişim</h4>
+        <p class="small">Adres: Ankara / Mamak</p>
+        <p class="small">Telefon: <a href="tel:05010701241">0501 070 1241</a></p>
+        <p class="small">WhatsApp: <a href="https://wa.me/905010701241" target="_blank">Mesaj Gönder</a></p>
+      </div>
+    </aside>
+  </section>
+
+  <section style="margin-top:18px">
+    <div class="card">
+      <h3>Neden bizi seçmelisiniz?</h3>
+      <ul>
+        <li>Deneyimli ve sertifikalı ekip</li>
+        <li>Ücretsiz keşif ve şeffaf fiyatlandırma</li>
+        <li>Zamanında teslim ve temizlik garantisi</li>
+        <li>Türkiye genelinde hizmet</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div style="max-width:900px;margin:auto;padding:6px 12px;">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+      <div style="display:flex; gap:10px; align-items:center;">
+        <div style="width:44px;height:44px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:white;font-weight:700">S</div>
+        <div style="font-weight:700">Sare Yapı Firma</div>
+      </div>
+      <div class="small" style="opacity:0.9">© 2025 Sare Yapı Firma — Tüm hakları saklıdır</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Fixed actions -->
+<a class="call" href="tel:05010701241" aria-label="Hemen ara">📞</a>
+<a style="position:fixed; left:20px; bottom:20px; background:#25D366; color:white; padding:12px 14px; border-radius:50px; text-decoration:none; font-weight:800" href="https://wa.me/905010701241" aria-label="WhatsApp">💬</a>
+
+</body>
+</html>
