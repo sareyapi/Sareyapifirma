@@ -1,1 +1,237 @@
-https://github.com/sareyapi/Sareyapifirma
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sare Yapı Firma – Premium İnşaat & Dekorasyon</title>
+
+<style>
+/* RENKLER (Nature Premium) */
+:root {
+    --green:#2ecc71;
+    --blue:#74b9ff;
+    --dark:#0a0a0a;
+    --white:#ffffff;
+    --softgray:#f2f2f2;
+    --text:#333;
+}
+
+/* GENEL */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:"Segoe UI", sans-serif;
+    background:var(--softgray);
+    color:var(--text);
+}
+
+/* MENÜ */
+nav{
+    width:100%;
+    background:var(--white);
+    padding:18px 40px;
+    position:fixed;
+    top:0; left:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:3px solid var(--green);
+}
+.logo{
+    font-size:26px;
+    font-weight:900;
+    color:var(--green);
+}
+nav a{
+    color:var(--text);
+    text-decoration:none;
+    font-size:18px;
+    margin-left:25px;
+    transition:.2s;
+}
+nav a:hover{ color:var(--green); }
+
+/* HERO */
+.hero{
+    height:80vh;
+    background:url("https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=90") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:80px;
+}
+.hero h1{
+    font-size:45px;
+    color:var(--white);
+    text-shadow:0 0 18px black;
+}
+.hero p{
+    font-size:22px;
+    margin-top:12px;
+    color:var(--white);
+}
+
+/* BÖLÜM */
+section{
+    max-width:1100px;
+    margin:70px auto;
+    padding:20px;
+}
+h2{
+    font-size:32px;
+    margin-bottom:15px;
+    color:var(--green);
+}
+
+/* KARTLAR */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+.card{
+    background:var(--white);
+    border-radius:12px;
+    padding:18px;
+    box-shadow:0 0 12px #ccc;
+    transition:.3s;
+}
+.card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 18px #aaa;
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.card h3{
+    color:var(--blue);
+    margin-bottom:8px;
+}
+
+/* GALERİ */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid var(--green);
+}
+
+/* FOOTER */
+footer{
+    background:var(--white);
+    padding:20px;
+    text-align:center;
+    border-top:3px solid var(--green);
+    color:var(--text);
+    margin-top:40px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:25px; right:25px;
+    background:#25D366;
+    padding:14px 20px;
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 0 12px #25D366;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Sare Yapı Firma</div>
+    <div>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#iletisim">İletişim</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Siz Hayal Edin, Gerisini Sare Yapı Firma’ya Bırakın</h1>
+        <p>Ferah – Modern – Premium Hizmet</p>
+    </div>
+</div>
+
+<!-- HAKKIMIZDA -->
+<section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>
+        Sare Yapı Firma olarak boya, alçı, mantolama, tadilat ve iç dekorasyon alanlarında
+        profesyonel hizmet sunuyoruz. Temiz işçilik, modern uygulamalar ve müşteri memnuniyeti
+        bizim için en öncelikli konulardır.
+    </p>
+</section>
+
+<!-- HİZMETLER -->
+<section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=90">
+            <h3>Alçı – Boya</h3>
+            <p>Profesyonel iç cephe boya ve alçı uygulamaları.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=90">
+            <h3>Mantolama</h3>
+            <p>Isı ve dış cephe yalıtımında uzman uygulama.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=800&q=90">
+            <h3>Tadilat – Dekorasyon</h3>
+            <p>Ev ve işyeri yenileme, tamir ve dekorasyon hizmetleri.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GALERİ -->
+<section id="galeri">
+    <h2>Galeri</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=90">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=90">
+        <img src="https://images.unsplash.com/photo-1531835551805-16dce590a1a6?auto=format&fit=crop&w=800&q=90">
+        <img src="https://images.unsplash.com/photo-1534067783941-51a79a55328f?auto=format&fit=crop&w=800&q=90">
+    </div>
+</section>
+
+<!-- İLETİŞİM -->
+<section id="iletisim">
+    <h2>İletişim</h2>
+    <p>
+        <strong>Telefon:</strong> 0501 070 1241 – 0534 283 1241<br>
+        <strong>Adres:</strong> Ankara / Mamak
+    </p>
+</section>
+
+<footer>
+    © 2025 Sare Yapı Firma – Tüm Hakları Saklıdır
+</footer>
+
+<a class="whatsapp" href="https://wa.me/905010701241" target="_blank">WhatsApp</a>
+
+</body>
+</html>
