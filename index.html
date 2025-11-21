@@ -1,280 +1,170 @@
 <!DOCTYPE html>
-<html lang=
+<html lang="tr">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sare Yapı Firma – Premium İnşaat & Dekorasyon</tr">
-tr">
-<!-- HİZMETLER -->
-<section id="hizmetler">
-    <h2>Hizmetlerimiz</h2><div class="line"></div>
-    <div class="cards fade">
+<title>Sare Yapı – Ultra Premium Web Sitesi</title>
 
-        <!-- Alçı Boya -->
-        <div class="card">
-            <img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/AA5D363C-E96C-4F0A-BB9D-2BBA918A51D0.png">
-            <h3>Alçı – Boya</h3>
-        </div>
-
-        <!-- Mantolama -->
-        <div class="card">
-            <img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/BB88CA46-A981-422E-BFAF-D76F02A435F2.png">
-            <h3>Mantolama</h3>
-        </div>
-
-        <!-- Tadilat & Dekorasyon -->
-        <div class="card">
-            <img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/IMG_0506.jpeg">
-            <h3>Tadilat – Dekorasyon</h3>
-        </div>
-
-    </div>
-</section>
 <style>
-/* RENKLER (Nature Premium) */
-:root {
-    --green:#2ecc71;
-    --blue:#74b9ff;
-    --dark:#0a0a0a;
-    --white:#ffffff;
-    --softgray:#f2f2f2;
-    --text:#333;
-}
-
-/* GENEL */
-*{margin:0;padding:0;box-sizing:border-box;}
 body{
-    font-family:"Segoe UI", sans-serif;
-    background:var(--softgray);
-    color:var(--text);
-}
-
-/* MENÜ */
-nav{
-    width:100%;
-    background:var(--white);
-    padding:18px 40px;
-    position:fixed;
-    top:0; left:0;
-    z-index:1000;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:3px solid var(--green);
-}
-.logo{
-    font-size:26px;
-    font-weight:900;
-    color:var(--green);
-}
-nav a{
-    color:var(--text);
-    text-decoration:none;
-    font-size:18px;
-    margin-left:25px;
-    transition:.2s;
-}
-nav a:hover{ color:var(--green); }
-
-/* HERO */
-.hero{
-    height:80vh;
-    background:url("https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=90") center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding-top:80px;
-}
-.hero h1{
-    font-size:45px;
-    color:var(--white);
-    text-shadow:0 0 18px black;
-}
-.hero p{
-    font-size:22px;
-    margin-top:12px;
-    color:var(--white);
-}
-
-/* BÖLÜM */
-section{
-    max-width:1100px;
-    margin:70px auto;
-    padding:20px;
+    margin:0; font-family:'Arial'; background:#0a0a0a; color:#eee;
 }
 h2{
-    font-size:32px;
-    margin-bottom:15px;
-    color:var(--green);
+    color:#e5c164; font-size:34px; margin-top:40px;
+}
+p{
+    font-size:19px; max-width:850px; margin:auto; color:#ccc;
 }
 
-/* KARTLAR */
+/* Gradient Backgrounds */
+.gradient1{ background:linear-gradient(135deg,#0a0a0a,#1f0f0f,#100a2e); }
+.gradient2{ background:linear-gradient(135deg,#0b0b0c,#1e1400,#2d1b00); }
+
+/* Navigation */
+nav{
+    padding:15px; position:sticky; top:0; z-index:999;
+    display:flex; justify-content:center; flex-wrap:wrap; gap:25px;
+    background:#000000cc; backdrop-filter: blur(8px);
+}
+nav a{
+    color:#e5c164; font-weight:bold; font-size:19px; text-decoration:none;
+}
+
+/* HEADER */
+header{
+    background:url('https://raw.githubusercontent.com/sareyapi/Sareyapifirma/main/BB88CA46-A981-422E-BFAF-D76F02A435F2.png') center/cover no-repeat;
+    height:70vh; display:flex; justify-content:center; align-items:center;
+    color:#ffda6b; font-size:52px; font-weight:bold;
+    text-shadow:0 0 25px black;
+    border-bottom:4px solid #e5c164;
+}
+
+/* GOLD LINE */
+.line{ width:140px; height:4px; background:#e5c164; margin:15px auto; }
+
+/* Cards */
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+    display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:30px;
 }
 .card{
-    background:var(--white);
-    border-radius:12px;
-    padding:18px;
-    box-shadow:0 0 12px #ccc;
-    transition:.3s;
+    background:#111; border:2px solid #e5c164;
+    box-shadow:0 0 25px #e5c16433;
+    padding:25px; width:330px; border-radius:13px; text-align:center;
+    transition:0.35s;
 }
 .card:hover{
-    transform:scale(1.03);
-    box-shadow:0 0 18px #aaa;
+    transform:scale(1.06);
+    border-color:#ffef9c;
+    box-shadow:0 0 30px #ffef9c55;
 }
 .card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:10px;
-}
-.card h3{
-    color:var(--blue);
-    margin-bottom:8px;
+    width:100%; height:210px; object-fit:cover; border-radius:12px; margin-bottom:15px;
 }
 
-/* GALERİ */
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:20px;
+/* Buttons */
+.btn{
+    background:linear-gradient(45deg,#e5c164,#ffef9c,#d4af37);
+    padding:18px 35px; border-radius:12px; color:#000;
+    font-size:22px; font-weight:bold; text-decoration:none;
+    display:inline-block; margin-top:20px;
+    box-shadow:0 0 15px #cfa93a88;
 }
+
+/* Gallery */
 .gallery img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:10px;
-    border:2px solid var(--green);
+    width:310px; height:230px; object-fit:cover; border-radius:10px;
+    border:3px solid #e5c164; margin:12px;
 }
 
-/* FOOTER */
+/* Whatsapp Floating */
+#whatsapp{
+    position:fixed; bottom:25px; right:25px; background:#25D366;
+    color:white; font-size:36px; padding:18px; border-radius:50%;
+    text-decoration:none; box-shadow:0 0 20px #25D366;
+}
+
+/* Footer */
 footer{
-    background:var(--white);
-    padding:20px;
-    text-align:center;
-    border-top:3px solid var(--green);
-    color:var(--text);
-    margin-top:40px;
+    background:#0d0d0e; padding:40px; margin-top:50px;
+    color:#999; text-align:center; border-top:2px solid #e5c164;
 }
 
-/* WHATSAPP */
-.whatsapp{
-    position:fixed;
-    bottom:25px; right:25px;
-    background:#25D366;
-    padding:14px 20px;
-    color:white;
-    border-radius:50px;
-    text-decoration:none;
-    font-size:20px;
-    font-weight:bold;
-    box-shadow:0 0 12px #25D366;
+.fade{ animation:fadeIn 1s ease-in-out; }
+@keyframes fadeIn{
+    from{ opacity:0; transform:translateY(20px); }
+    to{ opacity:1; transform:translateY(0); }
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-    <div class="logo">Sare Yapı Firma</div>
-    <div>
-        <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#galeri">Galeri</a>
-        <a href="#iletisim">İletişim</a>
-    </div>
+<nav class="gradient2">
+<a href="#hakkimizda">Hakkımızda</a>
+<a href="#nedenbiz">Neden Biz?</a>
+<a href="#hizmetler">Hizmetler</a>
+<a href="#referanslar">Referanslar</a>
+<a href="#galeri">Galeri</a>
+<a href="#iletisim">İletişim</a>
 </nav>
 
-<!-- HERO -->
-<div class="hero">
-    <div>
-        <h1>Siz Hayal Edin, Gerisini Sare Yapı Firma’ya Bırakın</h1>
-        <p>Ferah – Modern – Premium Hizmet</p>
-    </div>
+<header class="gradient1 fade">Sare Yapı – Ultra Premium</header>
+
+<section id="hakkimizda">
+<h2>Hakkımızda</h2><div class="line"></div>
+<p>Sare Yapı olarak Ankara’da alçı, boya, mantolama, kartonpiyer ve tadilat hizmetleri sunuyoruz. Kalite, hız ve profesyonellik bir arada.</p>
+</section>
+
+<section id="nedenbiz">
+<h2>Neden Biz?</h2><div class="line"></div>
+<div class="cards fade">
+<div class="card"><h3>✨ Premium Kalite</h3><p>Her işlemde altın standart.</p></div>
+<div class="card"><h3>⚡ Hızlı Teslim</h3><p>Zamanında ve hızlı teslimat.</p></div>
+<div class="card"><h3>⭐ Profesyonel Ekip</h3><p>Deneyimli usta kadrosu.</p></div>
+<div class="card"><h3>📞 7/24 Destek</h3><p>Her zaman yanınızdayız.</p></div>
+</div>
+</section>
+
+<section id="hizmetler">
+<h2>Hizmetlerimiz</h2><div class="line"></div>
+<div class="cards fade">
+
+<div class="card">
+    <img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/AA5D363C-E96C-4F0A-BB9D-2BBA918A51D0.png">
+    <h3>Alçı – Boya</h3>
 </div>
 
-<!-- HAKKIMIZDA -->
-<section id="hakkimizda">
-    <h2>Hakkımızda</h2>
-    <p>
-        Sare Yapı Firma olarak boya, alçı, mantolama, tadilat ve iç dekorasyon alanlarında
-        profesyonel hizmet sunuyoruz. Temiz işçilik, modern uygulamalar ve müşteri memnuniyeti
-        bizim için en öncelikli konulardır.
-    </p>
+<div class="card">
+    <img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/BB88CA46-A981-422E-BFAF-D76F02A435F2.png">
+    <h3>Mantolama</h3>
+</div>
+
+<div class="card">
+    <img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/IMG_0506.jpeg">
+    <h3>Tadilat – Dekorasyon</h3>
+</div>
+
+</div>
 </section>
 
-<!-- HİZMETLER -->
-<section id="hizmetler">
-    <h2>Hizmetlerimiz</h2>
-    <div class="cards">
-
-        <div class="card">
-            <img src="/mnt/data/43550B9E-FB04-4B2A-A129-DAFCB98A7869.jpeg">
-            <h3>Alçı – Boya</h3>
-            <p>Profesyonel iç cephe boya ve alçı uygulamaları.</p>
-        </div>
-
-        <div class="card">
-            <img src="/mnt/data/75F7DA39-100F-4B29-B45B-80055C2BFA08.jpeg">
-            <h3>Mantolama</h3>
-            <p>Isı ve dış cephe yalıtımında uzman uygulama.</p>
-        </div>
-
-        <div class="card">
-            <img src="/mnt/data/73A5D844-F8F1-43F0-8F2D-E710FB3FFFD1.jpeg">
-            <h3>Tadilat – Dekorasyon</h3>
-            <p>Ev ve işyeri yenileme, tamir ve dekorasyon hizmetleri.</p>
-        </div>
-
-    </div>
-</section>
-<!-- GALERİ -->
 <section id="galeri">
-    <h2>Galeri</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=90">
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=90">
-        <img src="https://images.unsplash.com/photo-1531835551805-16dce590a1a6?auto=format&fit=crop&w=800&q=90">
-        <img src="https://images.unsplash.com/photo-1534067783941-51a79a55328f?auto=format&fit=crop&w=800&q=90">
-    </<!-- GALERİ -->
-<section id="galeri">
-    <h2>Galeri</h2>
-    <div class="gallery">
-
-        <!-- Fotoğraf 1 (Çalışıyor) -->
-        <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=90">
-
-        <!-- Yeni Fotoğraf 2 -->
-        <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=800&q=90">
-
-        <!-- Yeni Fotoğraf 3 -->
-        <img src="https://images.unsplash.com/photo-1598300056487-44f3f7e0e9a4?auto=format&fit=crop&w=800&q=90">
-
-        <!-- Fotoğraf 4 (Çalışıyor) -->
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=90">
-
-    </div>
-</section>
+<h2>Galeri</h2><div class="line"></div>
+<div class="gallery fade">
+<img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/AA5D363C-E96C-4F0A-BB9D-2BBA918A51D0.png">
+<img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/BB88CA46-A981-422E-BFAF-D76F02A435F2.png">
+<img src="https://raw.githubusercontent.com/sareyapi/Sareyapifirma/69869edfc214f329e90e5bcc541e7bf43400a35d/IMG_0506.jpeg">
+</div>
 </section>
 
-<!-- İLETİŞİM -->
 <section id="iletisim">
-    <h2>İletişim</h2>
-    <p>
-        <strong>Telefon:</strong> 0501 070 1241 – 0534 283 1241<br>
-        <strong>Adres:</strong> Ankara / Mamak
-    </p>
+<h2>Adres & Telefon</h2><div class="line"></div>
+<p>Telefon: 0501 070 1241 – 0534 283 1241<br>Adres: Ankara / Mamak</p>
+<a class="btn" href="https://wa.me/905010701241">WhatsApp İletişim</a>
 </section>
 
-<footer>
-    © 2025 Sare Yapı Firma – Tüm Hakları Saklıdır
-</footer>
+<a id="whatsapp" href="https://wa.me/905010701241">💬</a>
 
-<a class="whatsapp" href="https://wa.me/905010701241" target="_blank">WhatsApp</a>
+<footer>© 2025 Sare Yapı – Ultra Premium Tasarım</footer>
 
 </body>
 </html>
